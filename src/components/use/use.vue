@@ -1,12 +1,16 @@
 <template>
   <div class="use">
-    享用
+    <home-swiper></home-swiper>
   </div>
 </template>
 
 <script>
+import HomeSwiper from 'base/swiper'
+
 export default {
-  
+  components: {
+    HomeSwiper
+  }
 }
 </script>
 

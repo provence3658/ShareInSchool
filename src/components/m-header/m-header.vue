@@ -7,13 +7,11 @@
 
 <script>
 export default {
-  
 }
 </script>
 
 <style lang="stylus" scoped>
   @import "~common/stylus/variable"
-  
   .m-header
     position relative
     height 50px
