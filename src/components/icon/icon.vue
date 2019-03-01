@@ -45,6 +45,7 @@ export default {
   width 100%
   height 0
   padding-bottom 25%
+  margin-bottom 25px
   .icon
     position relative
     float left
@@ -59,7 +60,7 @@ export default {
       bottom 1rem
       .icon-img-content
         display block
-        width 50%
+        width 30px
         margin 0 auto
         margin-top 50%
         transform translateY(-50%)
