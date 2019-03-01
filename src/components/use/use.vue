@@ -1,15 +1,18 @@
 <template>
   <div class="use">
-    <home-swiper></home-swiper>
+    <use-swiper></use-swiper>
+    <use-icons></use-icons>
   </div>
 </template>
 
 <script>
-import HomeSwiper from 'base/swiper'
+import UseSwiper from '../swiper/swiper'
+import UseIcons from '../icon/icon'
 
 export default {
   components: {
-    HomeSwiper
+    UseSwiper,
+    UseIcons
   }
 }
 </script>
