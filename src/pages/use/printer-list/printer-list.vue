@@ -46,7 +46,6 @@ export default {
 
 <style lang="stylus" scoped>
 .printer-list
-  padding 16px 0
   .printer-wrapper
     float left
   .printer-item

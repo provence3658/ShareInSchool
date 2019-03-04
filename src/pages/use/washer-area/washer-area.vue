@@ -1,9 +1,9 @@
 <template>
-  <div class="printer-area">
+  <div class="washer-area">
     <div class="left">
-      <div class="title">您附近的打印机</div>
-      <div class="printer-list">
-        <printer-list></printer-list>
+      <div class="title">雅苑3号楼洗衣机情况</div>
+      <div class="washer-list">
+        <washer-condition></washer-condition>
       </div>
     </div>
     <div class="see-detail">
@@ -13,20 +13,21 @@
 </template>
 
 <script>
+import WasherCondition from '../washer-condition/washer-condition'
 import SeeDetail from '../see-detail/see-detail'
-import PrinterList from '../printer-list/printer-list'
+
 export default {
-  name: 'PrinterArea',
+  name: 'WasherArea',
   components: {
-    SeeDetail,
-    PrinterList
+    WasherCondition,
+    SeeDetail
   }
 }
 </script>
 
 <style lang="stylus" scoped>
 @import '~common/stylus/variable.styl'
-.printer-area
+.washer-area
   margin 10px 20px 0
   display flex
   flex-direction row

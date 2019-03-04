@@ -13,11 +13,14 @@ export default {
 <style lang="stylus" scoped>
   @import "~common/stylus/variable"
   .m-header
-    position relative
+    position fixed
+    top 0
+    width 100%
     height 50px
     color $color-text-d
     font-size 0
     background-color $color-theme
+    z-index 100
     .icon
       display inline-block
       vertical-align top

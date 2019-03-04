@@ -1,7 +1,7 @@
 <template>
   <div class="see-detail">
     <div class="text-wrapper">
-      <div class="text">查看更多</div>
+      <div class="text">{{text}}</div>
     </div>
     <div class="icon-wrapper">
       <img class="icon" src="./arrow.png">
@@ -11,7 +11,17 @@
 
 <script>
 export default {
-  name: 'SeeDetail'
+  name: 'SeeDetail',
+  props: {
+    text: {
+      type: String,
+      default: '查看更多'
+    },
+    bgColor: {
+      type: String,
+      default: ''
+    }
+  }
 }
 </script>
 

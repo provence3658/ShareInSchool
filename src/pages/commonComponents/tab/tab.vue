@@ -89,6 +89,8 @@ export default {
     height 50px
     line-height 50px
     font-size $font-size-small-s
+    background-color #fff
+    padding-top 5px
     .tab-item
       flex 1
       text-align center

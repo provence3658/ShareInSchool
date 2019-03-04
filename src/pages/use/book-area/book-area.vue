@@ -1,9 +1,9 @@
 <template>
-  <div class="printer-area">
+  <div class="book-area">
     <div class="left">
-      <div class="title">您附近的打印机</div>
-      <div class="printer-list">
-        <printer-list></printer-list>
+      <div class="title">您可能需要的书</div>
+      <div class="book-list">
+        <book-list></book-list>
       </div>
     </div>
     <div class="see-detail">
@@ -13,20 +13,21 @@
 </template>
 
 <script>
+import BookList from '../book-list/book-list'
 import SeeDetail from '../see-detail/see-detail'
-import PrinterList from '../printer-list/printer-list'
+
 export default {
-  name: 'PrinterArea',
+  name: 'BookArea',
   components: {
-    SeeDetail,
-    PrinterList
+    BookList,
+    SeeDetail
   }
 }
 </script>
 
 <style lang="stylus" scoped>
 @import '~common/stylus/variable.styl'
-.printer-area
+.book-area
   margin 10px 20px 0
   display flex
   flex-direction row
