@@ -4,6 +4,7 @@
 import 'babel-polyfill'
 import Vue from 'vue'
 import App from './App'
+import Cube from 'cube-ui'
 import router from './router'
 import fastclick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
@@ -13,6 +14,7 @@ import 'common/stylus/index.styl'
 
 fastclick.attach(document.body)
 Vue.use(VueAwesomeSwiper)
+Vue.use(Cube)
 
 Vue.config.productionTip = false
 
