@@ -45,7 +45,4 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.eat
-  .list
-    margin 50px 0 60px 0
 </style>

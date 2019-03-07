@@ -1,5 +1,5 @@
 <template>
-  <div class="list">
+  <div class="list" ref="wrapper">
     <list-item
       v-for="(item, index) in data"
       :key="index"
@@ -10,6 +10,7 @@
 
 <script>
 import ListItem from '../list-item/list-item'
+import BScroll from 'better-scroll'
 export default {
   name: 'List',
   components: {
@@ -18,12 +19,30 @@ export default {
   props: {
     data: {
       type: Array,
-      default: ['']
+      default: () => ['']
     }
+  },
+  mounted () {
+    this.$nextTick(() => {
+      if (!this.scroll) {
+        this.scroll = new BScroll(this.$refs.wrapper, {
+          click: true
+        })
+        // console.log(this.scroll)
+      } else {
+        this.scroll.refresh()
+      }
+    })
   }
 }
 </script>
+
 <style lang="stylus" scoped>
- 
+.list
+  position absolute
+  top 50px
+  left 0
+  right 0
+  bottom 60px
+  overflow hidden
 </style>
- 

@@ -30,6 +30,7 @@
         <span class="text">预约</span>
       </div>
     </div>
+    <div class="line border-1px"></div>
   </div>
 </template>
 
@@ -39,7 +40,7 @@ export default {
   props: {
     data: {
       type: Object,
-      default: {}
+      default: () => {}
     }
   }
 }
@@ -47,6 +48,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import "~common/stylus/variable"
+@import "~common/stylus/mixin"
 .list-item
   padding 10px 24px
   .top
@@ -72,7 +74,9 @@ export default {
         font-size $font-size-small
   .img-wrapper
     width 100%
-    img 
+    height 0
+    padding-bottom 66.7%
+    img
       width 100%
   .bottom
     width 100%
@@ -108,4 +112,7 @@ export default {
         width 32px
         height 32px
         vertical-align top
+  .line
+    margin-top 12px
+    border-1px(rgba(7, 17, 27, 0.1))
 </style>
