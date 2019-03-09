@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="img-wrapper">
-      <img src="./1.jpg" alt="">
+      <img :src="data.imgUrl" alt="">
     </div>
     <div class="star"></div>
     <div class="bottom">
@@ -50,7 +50,7 @@ export default {
 @import "~common/stylus/variable"
 @import "~common/stylus/mixin"
 .list-item
-  padding 10px 24px
+  padding 20px 24px 0
   .top
     height 24px
     width 100%
