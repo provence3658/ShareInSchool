@@ -1,10 +1,12 @@
 <template>
   <div class="list" ref="wrapper">
-    <list-item
-      v-for="(item, index) in data"
-      :key="index"
-      :data="item">
-    </list-item>
+    <div>
+      <list-item
+        v-for="(item, index) in data"
+        :key="index"
+        :data="item">
+      </list-item>
+    </div>
   </div>
 </template>
 

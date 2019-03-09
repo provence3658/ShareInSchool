@@ -9,8 +9,8 @@
     </div>
     <div class="img-wrapper">
       <img :src="data.imgUrl" alt="">
+      <cube-rate class="star" v-model="data.rate"></cube-rate>
     </div>
-    <div class="star"></div>
     <div class="bottom">
       <div class="info">
         <div class="label-wrapper">
@@ -41,6 +41,11 @@ export default {
     data: {
       type: Object,
       default: () => {}
+    }
+  },
+  data () {
+    return {
+      max: 5
     }
   }
 }
@@ -76,8 +81,17 @@ export default {
     width 100%
     height 0
     padding-bottom 66.7%
+    position relative
+    overflow hidden
     img
       width 100%
+    .star
+      position absolute
+      top 0
+      left 0
+      width 104px
+      height 16px
+      padding 5px
   .bottom
     width 100%
     font-size $font-size-medium

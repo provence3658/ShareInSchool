@@ -1,11 +1,15 @@
 <template>
   <div class="use">
     <m-header></m-header>
-    <use-swiper class="use-swiper"></use-swiper>
-    <use-icons></use-icons>
-    <printer-area></printer-area>
-    <washer-area></washer-area>
-    <book-area class="book-area"></book-area>
+    <div class="content-wrapper" ref="wrapper">
+      <div>
+        <use-swiper class="use-swiper"></use-swiper>
+        <use-icons></use-icons>
+        <printer-area></printer-area>
+        <washer-area></washer-area>
+        <book-area class="book-area"></book-area>
+      </div>
+    </div>
     <tab></tab>
   </div>
 </template>
@@ -18,6 +22,7 @@ import MHeader from '../commonComponents/m-header/m-header'
 import Tab from '../commonComponents/tab/tab'
 import WasherArea from './washer-area/washer-area'
 import BookArea from './book-area/book-area'
+import BScroll from 'better-scroll'
 
 export default {
   components: {
@@ -28,14 +33,29 @@ export default {
     Tab,
     WasherArea,
     BookArea
+  },
+  mounted () {
+    this.$nextTick(() => {
+      if (!this.scroll) {
+        this.scroll = new BScroll(this.$refs.wrapper, {
+          click: true
+        })
+        // console.log(this.scroll)
+      } else {
+        this.scroll.refresh()
+      }
+    })
   }
 }
 </script>
 
 <style lang="stylus" scoped>
 .use
-  .use-swiper
-    margin-top 50px
-  .book-area
-    margin-bottom 60px
+  .content-wrapper
+    position absolute
+    top 50px
+    left 0
+    right 0
+    bottom 60px
+    overflow hidden
 </style>
