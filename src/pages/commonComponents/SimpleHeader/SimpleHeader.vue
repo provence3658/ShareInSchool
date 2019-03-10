@@ -1,15 +1,15 @@
 <template>
   <div class="m-header">
     <div class="icon"></div>
-    <div>{{title}}</div>
+    <div class="wrapper">
+      <div class="text">{{title}}</div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Header',
-  data () {
-  },
   props: {
     title: String
   }
@@ -23,10 +23,8 @@ export default {
     top 0
     width 100%
     height 50px
-    color $color-text-d
-    font-size 0
     background-color $color-theme
-    z-index 100
+    //border 1px solid black
     .icon
       display inline-block
       vertical-align top
@@ -37,9 +35,21 @@ export default {
       margin-left 14px
       background-image url('return.png')
       background-size 30px 32px
-    .text
-      display inline-block
-      vertical-align top
-      font-size $font-size-medium
-      line-height 50px
+      //border 1px solid black
+    .wrapper
+      position absolute
+      top 0
+      left 0
+      right 0
+      display flex
+      flex-direction row
+      height 100%
+      justify-content center
+      //border 1px solid black
+      .text
+      //border 1px solid black
+        height 50px
+        line-height 50px
+        align-self center
+        font-size $font-size-large-x
 </style>

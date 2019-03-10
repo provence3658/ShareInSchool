@@ -7,7 +7,7 @@
 <script>
 import SimpleHeader from '../../commonComponents/SimpleHeader/SimpleHeader'
 export default {
-  name: 'Setup',
+  name: 'Feedback',
   components: {
     SimpleHeader
   }

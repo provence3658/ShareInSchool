@@ -1,15 +1,18 @@
 <template>
   <div>
     <simple-header></simple-header>
+    <message-header></message-header>
   </div>
 </template>
 
 <script>
 import SimpleHeader from '../../commonComponents/SimpleHeader/SimpleHeader'
+import MessageHeader from './MessageHeader/MessageHeader'
 export default {
-  name: 'Setup',
+  name: 'Message',
   components: {
-    SimpleHeader
+    SimpleHeader,
+    MessageHeader
   }
 }
 </script>
