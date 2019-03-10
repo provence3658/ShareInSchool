@@ -1,17 +1,19 @@
 <template>
   <div class="m-header">
     <div class="icon"></div>
-    <div>{{title}}</div>
+    <div class="text">{{title}}</div>
+    <div class="help"></div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Header',
-  data () {
-  },
   props: {
-    title: String
+    title: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>
@@ -27,19 +29,25 @@ export default {
     font-size 0
     background-color $color-theme
     z-index 100
+    display flex
+    flex-direction row
+    padding 1px
+    box-sizing border-box
     .icon
       display inline-block
-      vertical-align top
-      margin-top 9px
-      width 30px
-      height 32px
-      margin-right 9px
-      margin-left 14px
+      width 48px
+      height 48px
       background-image url('return.png')
-      background-size 30px 32px
     .text
       display inline-block
       vertical-align top
-      font-size $font-size-medium
+      font-size $font-size-large-x
       line-height 50px
+      flex 1
+      text-align center
+    .help
+      display inline-block
+      width 48px
+      height 48px
+      background-image url('help.png')
 </style>

@@ -5,6 +5,7 @@ import Play from '@/pages/play/play'
 import Eat from '@/pages/eat/eat'
 import Mine from '@/pages/mine/mine'
 import Try from '@/pages/try/try'
+import Printer from '@/pages/printer/printer'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/try',
       name: 'Try',
       component: Try
+    },
+    {
+      path: '/printer',
+      name: 'Printer',
+      component: Printer
     }
   ]
 })
