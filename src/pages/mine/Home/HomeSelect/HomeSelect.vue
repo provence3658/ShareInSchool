@@ -14,7 +14,7 @@
         <td>反馈中心</td>
       </tr>
       <tr @click="pageRouter(setup)">
-        <td class="first"><img src="./feedback.png" alt=""></td>
+        <td class="first"><img src="./setup.png" alt=""></td>
         <td>设置</td>
       </tr>
     </table>
@@ -54,16 +54,22 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  @import "~common/stylus/variable"
   table
-    width 90%
+    width 95%
     margin auto
-    //margin 10px
-    border 1px solid black
+    font-size $font-size-medium
     tr
       width 100%
+      border-bottom  1px solid #EFEEEE
       .first
-        margin-left 10px
+        padding-left 15px
         width 20%
+        height 60px
+        // padding 10px
+        //border 1px solid black
+        img
+          width 30px
       td
         vertical-align: middle
         text-align: left

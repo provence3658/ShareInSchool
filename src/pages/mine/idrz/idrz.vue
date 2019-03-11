@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import SimpleHeader from '../../commonComponents/SimpleHeader/SimpleHeader'
+import SimpleHeader from '../../commonComponents/SimpleHeader/SimpleHeader1'
 export default {
   name: 'idRZ',
   components: {

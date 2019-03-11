@@ -10,6 +10,8 @@ import Setup from '@/pages/mine/setup/setup'
 import idRZ from '@/pages/mine/idrz/idrz'
 import Feedback from '@/pages/mine/feedback/feedback'
 import Appointment from '@/pages/mine/appointment/appointment'
+import Printer from '@/pages/printer/printer'
+
 Vue.use(Router)
 
 export default new Router({
@@ -46,7 +48,7 @@ export default new Router({
     },
     {
       path: '/mine/setup',
-      name: 'Setup',
+      name: 'setup',
       component: Setup
     },
     {
@@ -63,6 +65,11 @@ export default new Router({
       path: '/mine/feedback',
       name: 'feedback',
       component: Feedback
+    },
+    {
+      path: '/printer',
+      name: 'Printer',
+      component: Printer
     }
   ]
 })

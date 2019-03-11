@@ -2,25 +2,25 @@
   <div class="wrapper">
     <div class="icon">
       <div class="imgWrapper">
-        <img src="./balance.png" alt="">
+        <img src="./integral.png" alt="">
       </div>
-      <p class="desc">信誉积分200</p>
+      <p class="desc">积分</p>
     </div>
     <div class="icon">
       <div class="imgWrapper">
-        <img src="./balance.png" alt="">
+        <img src="./wallet.png" alt="">
       </div>
-      <p class="desc">余额12元</p>
+      <p class="desc">余额</p>
     </div>
     <div class="icon">
       <div class="imgWrapper">
-        <img src="./balance.png" alt="">
+        <img src="./order.png" alt="">
       </div>
       <p class="desc">订单</p>
     </div>
     <div class="icon">
       <div class="imgWrapper">
-        <img src="./balance.png" alt="">
+        <img src="./notice.png" alt="">
       </div>
       <p class="desc">通知</p>
     </div>
@@ -39,34 +39,36 @@ export default {
     border 1px solid #FEF188
     border-radius 3px
     margin 8px
-    //background $color-highlight-background
     white-space: nowrap;
     overflow: hidden;
     height 0
-    padding-bottom 25%
+    padding-bottom 75px
     margin-top .1rem
+    font-size $font-size-medium
     .icon
-      z-index 80
       position relative
       overflow hidden
       float left
       width 25%
       height 0
-      padding-bottom 25%
+      padding-bottom 20%
       //background #dddddd
       .imgWrapper
         position absolute
         left 0
         top 0
         right 0
-        bottom .44rem
         height 65%
         box-sizing border-box
         padding .1rem
+        //border 1px solid blue
         img
           display block
-          margin 0 auto
-          height 100%
+          height 80%
+          //border 1px solid black
+          position absolute
+          bottom 0px
+          margin-left 25px
       .desc
         position absolute
         left 0
@@ -75,4 +77,5 @@ export default {
         height 20px
         line-height 20px
         text-align center
+        //border 1px solid black
 </style>

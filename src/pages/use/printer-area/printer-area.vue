@@ -3,12 +3,12 @@
     <div class="left">
       <div class="title">您附近的打印机</div>
       <div class="printer-list">
-        <printer-list></printer-list>
+        <printer-list :printerList="printerList.slice(0,4)"></printer-list>
       </div>
     </div>
-    <div class="see-detail">
+    <router-link to="/printer" tag="div" class="see-detail">
       <see-detail></see-detail>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -20,6 +20,9 @@ export default {
   components: {
     SeeDetail,
     PrinterList
+  },
+  props: {
+    printerList: Array
   }
 }
 </script>

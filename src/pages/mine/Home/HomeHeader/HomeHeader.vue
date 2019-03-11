@@ -4,16 +4,21 @@
     </div>
     <div class="name">
       <img src="./bg1.png" class="nameBack">
-      <div class="user">
+      <div class="userWrapper">
         <div class="headImg">
-          <img src="./qq.png" alt="">
+          <img src="./qq.jpg" alt="">
         </div>
-        <div class="first">郝丹溪</div>
-        <div class="text">哈佛大学</div>
-        <div class="text">162班</div>
-        <div class="grade">
+        <div class="textWrapper">
+            <div class="text">郝丹溪</div>
+            <div class="text">哈佛大学</div>
+            <div class="text">162班</div>
+        </div>
+      </div>
+      <div class="edit">
+          <img src="./edit.png" alt="">
+      </div>
+      <div class="grade">
           <div>LV10</div>
-        </div>
       </div>
     </div>
   </div>
@@ -33,16 +38,14 @@ export default {
       position fixed
       top 0
       width 100%
-      height 120px
-      z-index 10
+      height 115px
       color $color-text-d
       font-size 0
       background-color $color-theme
     .name
       position relative
-      border-radius: 10px;
-      z-index 20
-      height 200px
+      border-radius: 10px
+      height 220px
       margin 20px 8px 8px 10px
       border 1px solid #FEF188
       background-color $color-background
@@ -51,24 +54,33 @@ export default {
         width 100%
         top 0
         left 0
-        right 0
+        right 1px
         opacity 0.3
-      .user
-        display flex
-        flex-direction column
-        width 100%
-        height 100%
-        align-items center
-        justify-content center
+      .userWrapper
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        text-align center
         .headImg
-          border-radius 50%
-          width 65px
-          z-index 60
+          margin-top 55px
           img
-            width 100%
-        .grade
-          position absolute
-          right 0
-          bottom 0
-//          border 1px solid black
+            border 1px solid black
+            border-radius 50%
+            width 60px
+        .textWrapper
+          line-height 20px
+          height 20px
+      .edit
+        position absolute
+        right 115px
+        bottom 42px
+        img
+          width 20px
+          height 20px
+      .grade
+        position absolute
+        right 10px
+        bottom 10px
 </style>

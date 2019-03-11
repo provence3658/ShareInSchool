@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import SimpleHeader from '../../commonComponents/SimpleHeader/SimpleHeader'
+import SimpleHeader from '../../commonComponents/SimpleHeader/SimpleHeader1'
 import MessageHeader from './MessageHeader/MessageHeader'
 export default {
   name: 'Message',

@@ -18,28 +18,8 @@ export default {
   components: {
     EachPrinter
   },
-  data () {
-    return {
-      printerList: [
-        {
-          id: '0001',
-          condition: 'wait',
-          waitNum: 2
-        }, {
-          id: '0002',
-          condition: 'wait',
-          waitNum: 1
-        }, {
-          id: '0003',
-          condition: 'ok',
-          waitNum: 0
-        }, {
-          id: '0004',
-          condition: 'ok',
-          waitNum: 0
-        }
-      ]
-    }
+  props: {
+    printerList: Array
   }
 }
 </script>
