@@ -2,7 +2,6 @@
   <div class="m-header">
     <div class="icon"></div>
     <div class="text">{{title}}</div>
-    <div class="help"></div>
   </div>
 </template>
 
@@ -25,8 +24,6 @@ export default {
     top 0
     width 100%
     height 50px
-    color $color-text-d
-    font-size 0
     background-color $color-theme
     z-index 100
     display flex
@@ -34,6 +31,9 @@ export default {
     padding 1px
     box-sizing border-box
     .icon
+      position absolute
+      top 0
+      left 0
       display inline-block
       width 48px
       height 48px
@@ -45,9 +45,4 @@ export default {
       line-height 50px
       flex 1
       text-align center
-    .help
-      display inline-block
-      width 48px
-      height 48px
-      background-image url('help.png')
 </style>

@@ -6,17 +6,17 @@
 </template>
 
 <script>
-import SimpleHeader from '../../commonComponents/SimpleHeader/SimpleHeader1'
+import SimpleHeader from '../../commonComponents/SimpleHeader/SimpleHeader2'
 import Content from './Content/content'
 export default {
-  name: 'Setup',
+  name: 'Score',
   components: {
     SimpleHeader,
     Content
   },
   data () {
     return {
-      title: '设置'
+      title: '积分明细'
     }
   }
 }
