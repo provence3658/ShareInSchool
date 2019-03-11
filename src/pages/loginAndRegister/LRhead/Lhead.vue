@@ -3,10 +3,12 @@
     <div>
       <img src="./return.png" alt="">
     </div>
+    <router-link to="./register">
+      <div class="register">
+        注册
+      </div>
+    </router-link>
     <div class="login">
-      注册
-    </div>
-    <div class="register">
       登陆
     </div>
   </div>
@@ -14,7 +16,7 @@
 
 <script>
 export default {
-  name: 'LRhead'
+  name: 'Lhead'
 }
 </script>
 

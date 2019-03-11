@@ -15,16 +15,21 @@ import Balance from '@/pages/mine/balance/balance'
 import Order from '@/pages/mine/order/order'
 import Score from '@/pages/mine/score/score'
 import Notify from '@/pages/mine/notify/notify'
-import LoginAndRegister from '@/pages/loginAndRegister/loginAndRegister'
-
+import Login from '@/pages/loginAndRegister/login'
+import Register from '@/pages/loginAndRegister/register'
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'loginAndRegister',
-      component: LoginAndRegister
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register
     },
     {
       path: '/use',
