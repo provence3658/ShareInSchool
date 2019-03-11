@@ -11,11 +11,21 @@ import idRZ from '@/pages/mine/idrz/idrz'
 import Feedback from '@/pages/mine/feedback/feedback'
 import Appointment from '@/pages/mine/appointment/appointment'
 import Printer from '@/pages/printer/printer'
+import Balance from '@/pages/mine/balance/balance'
+import Order from '@/pages/mine/order/order'
+import Score from '@/pages/mine/score/score'
+import Notify from '@/pages/mine/notify/notify'
+import LoginAndRegister from '@/pages/loginAndRegister/loginAndRegister'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      name: 'loginAndRegister',
+      component: LoginAndRegister
+    },
     {
       path: '/use',
       name: 'Use',
@@ -70,6 +80,26 @@ export default new Router({
       path: '/printer',
       name: 'Printer',
       component: Printer
+    },
+    {
+      path: '/mine/balance',
+      name: 'balance',
+      component: Balance
+    },
+    {
+      path: '/mine/order',
+      name: 'order',
+      component: Order
+    },
+    {
+      path: '/mine/score',
+      name: 'score',
+      component: Score
+    },
+    {
+      path: '/mine/notify',
+      name: 'notify',
+      component: Notify
     }
   ]
 })

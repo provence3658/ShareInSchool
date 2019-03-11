@@ -1,29 +1,37 @@
 <template>
   <div class="wrapper">
-    <div class="icon">
-      <div class="imgWrapper">
-        <img src="./integral.png" alt="">
+    <router-link to="mine/score">
+      <div class="icon">
+        <div class="imgWrapper">
+          <img src="./integral.png" alt="">
+        </div>
+        <p class="desc">积分</p>
       </div>
-      <p class="desc">积分</p>
-    </div>
-    <div class="icon">
-      <div class="imgWrapper">
-        <img src="./wallet.png" alt="">
+    </router-link>
+    <router-link to="mine/balance">
+      <div class="icon">
+        <div class="imgWrapper">
+          <img src="./wallet.png" alt="">
+        </div>
+        <p class="desc">余额</p>
       </div>
-      <p class="desc">余额</p>
-    </div>
-    <div class="icon">
-      <div class="imgWrapper">
-        <img src="./order.png" alt="">
+    </router-link>
+    <router-link to="mine/order">
+      <div class="icon">
+        <div class="imgWrapper">
+          <img src="./order.png" alt="">
+        </div>
+        <p class="desc">订单</p>
       </div>
-      <p class="desc">订单</p>
-    </div>
-    <div class="icon">
-      <div class="imgWrapper">
-        <img src="./notice.png" alt="">
+    </router-link>
+    <router-link to="mine/notify">
+      <div class="icon">
+        <div class="imgWrapper">
+          <img src="./notice.png" alt="">
+        </div>
+        <p class="desc">通知</p>
       </div>
-      <p class="desc">通知</p>
-    </div>
+    </router-link>
   </div>
 </template>
 
