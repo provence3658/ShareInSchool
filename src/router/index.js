@@ -17,6 +17,8 @@ import Score from '@/pages/mine/score/score'
 import Notify from '@/pages/mine/notify/notify'
 import Login from '@/pages/loginAndRegister/login'
 import Register from '@/pages/loginAndRegister/register'
+import wordPrint from '@/pages/wordPrint/wordPrint'
+import LocalFile from '@/pages/localFile/localFile'
 Vue.use(Router)
 
 export default new Router({
@@ -105,6 +107,17 @@ export default new Router({
       path: '/mine/notify',
       name: 'notify',
       component: Notify
+    },
+    {
+      path: '/wordPrint',
+      name: 'wordPrint',
+      component: wordPrint,
+      children: [
+        {
+          path: 'localFile',
+          component: LocalFile
+        }
+      ]
     }
   ]
 })
