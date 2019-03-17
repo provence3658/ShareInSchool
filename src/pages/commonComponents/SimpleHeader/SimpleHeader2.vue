@@ -1,6 +1,6 @@
 <template>
   <div class="m-header">
-    <div class="icon"></div>
+    <div class="icon" @click="goback"></div>
     <div class="text">{{title}}</div>
     <div class="help"></div>
   </div>
@@ -13,6 +13,11 @@ export default {
     title: {
       type: String,
       default: ''
+    }
+  },
+  methods: {
+    goback () {
+      this.$router.go(-1)
     }
   }
 }
