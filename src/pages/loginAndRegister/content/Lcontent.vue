@@ -69,12 +69,12 @@ export default {
         .see
           margin-left 36px
           img
-            width 35px
-            height 35px
+            width 2.1875rem
+            height 2.1875rem
       .notify
         font-size $font-size-small
-        margin-top -15px
-        margin-left 10px
+        margin-top -0.9375rem
+        margin-left .625rem
     .btn-wrapper
       display flex
       align-items center
