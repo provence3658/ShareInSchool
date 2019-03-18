@@ -20,6 +20,7 @@ export default {
       } else {
         this.state = 'all'
       }
+      this.$emit('toggleState', this.state)
     }
   }
 }

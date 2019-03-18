@@ -3,8 +3,8 @@
     <simple-header :title="title"></simple-header>
     <div class="content-wrapper" ref="wrapper">
       <div>
-        <my-filter></my-filter>
-        <list :list="printerList"></list>
+        <my-filter @toggleState="_toggleState"></my-filter>
+        <list :list="printerList" :state="state"></list>
       </div>
     </div>
   </div>
@@ -21,7 +21,8 @@ export default {
   data () {
     return {
       title: '打印机',
-      printerList: []
+      printerList: [],
+      state: 'all'
     }
   },
   components: {
@@ -39,6 +40,9 @@ export default {
         const data = res.data
         this.printerList = data.printerList
       }
+    },
+    _toggleState (data) {
+      this.state = data
     }
   },
   mounted () {

@@ -1,11 +1,16 @@
 <template>
   <div class="printer-list">
-    <div class="printer-wrapper" v-for="(item, index) in printerList" :key="index">
+    <div
+      class="printer-wrapper"
+      v-for="(item, index) in printerList"
+      :key="index"
+      @click="toOnePrinter(item.id)">
       <each-printer
         class="printer-item"
         :printerId="item.id"
         :waitNum="item.waitNum"
-        :condition="item.condition"></each-printer>
+        :condition="item.condition"
+        ></each-printer>
     </div>
   </div>
 </template>
@@ -20,6 +25,11 @@ export default {
   },
   props: {
     printerList: Array
+  },
+  methods: {
+    toOnePrinter (id) {
+      this.$router.push({ path: `/onePrinter/${id}` })
+    }
   }
 }
 </script>
