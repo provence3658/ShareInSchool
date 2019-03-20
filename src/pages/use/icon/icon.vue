@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <div class="icon" v-for="(item, index) in icons" :key="index">
+    <div class="icon" v-for="(item, index) in icons" :key="index" @click="toPage(index)">
       <div class="icon-img">
         <img class="icon-img-content" :src="item.imgUrl">
       </div>
@@ -32,6 +32,13 @@ export default {
           title: '我的订单'
         }
       ]
+    }
+  },
+  methods: {
+    toPage (index) {
+      switch (index) {
+        case 0: this.$router.push('/printer')
+      }
     }
   }
 }

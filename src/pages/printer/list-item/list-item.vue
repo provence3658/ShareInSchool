@@ -12,12 +12,12 @@
         <div class="location">位置:{{location}}</div>
       </div>
       <div class="right">
-        <router-link
+        <div
           class="button"
           :class="{'colordisplay':display}"
-          tag="div"
           to="/wordPrint"
-        >{{btnValue}}</router-link>
+          @click="toPage()"
+        >{{btnValue}}</div>
       </div>
     </div>
     <div class="line border-1px"></div>
@@ -64,6 +64,15 @@ export default {
         return `当前有${this.waitNum}人排队`
       } else {
         return ''
+      }
+    }
+  },
+  methods: {
+    toPage () {
+      if (this.condition === 'ok') {
+        this.$router.push('/wordPrint/localFile')
+      } else {
+        this.$router.push('/wordPrint/printWait')
       }
     }
   }

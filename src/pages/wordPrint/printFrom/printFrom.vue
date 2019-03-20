@@ -1,12 +1,12 @@
 <template>
   <div class="printFrom">
-    <div class="item">
+    <router-link class="item" tag="div" to="/wordPrint/localFile">
       <div class="img-wrapper color1">
         <img src="./1.png" alt="">
       </div>
       <div class="title">本地文件</div>
       <div class="desc">手机中的本地文件</div>
-    </div>
+    </router-link>
     <div class="item">
       <div class="img-wrapper color2">
         <img src="./2.png" alt="">

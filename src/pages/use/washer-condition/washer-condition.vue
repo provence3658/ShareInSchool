@@ -6,14 +6,14 @@
       </div>
       <div class="detail">
         <div class="free">
-          <div class="circle"></div>
+          <div class="circle color"></div>
           <span class="condition">空闲</span>
           <div class="num">3</div>
         </div>
         <div class="working">
           <div class="circle"></div>
           <span class="condition">使用中</span>
-          <div class="num">3</div>
+          <div class="num">11</div>
         </div>
       </div>
     </div>
@@ -63,6 +63,8 @@ export default {
           display inline-block
           circle()
           background #D76E6E
+        .color
+          background-color #B0E671
         .condtion
           font-size $font-size-small
         .num

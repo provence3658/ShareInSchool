@@ -19,6 +19,8 @@ import Login from '@/pages/loginAndRegister/login'
 import Register from '@/pages/loginAndRegister/register'
 import wordPrint from '@/pages/wordPrint/wordPrint'
 import LocalFile from '@/pages/localFile/localFile'
+import printWait from '@/pages/printWait/printWait'
+import onePrinter from '@/pages/onePrinter/onePrinter'
 Vue.use(Router)
 
 export default new Router({
@@ -111,13 +113,19 @@ export default new Router({
     {
       path: '/wordPrint',
       name: 'wordPrint',
-      component: wordPrint,
-      children: [
-        {
-          path: 'localFile',
-          component: LocalFile
-        }
-      ]
+      component: wordPrint
+    },
+    {
+      path: '/wordPrint/localFile',
+      component: LocalFile
+    },
+    {
+      path: '/wordPrint/printWait',
+      component: printWait
+    },
+    {
+      path: '/onePrinter/:id',
+      component: onePrinter
     }
   ]
 })

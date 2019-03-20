@@ -3,8 +3,8 @@
     <span class="printer-id">{{printerId}}</span>
     <img class="printer-img" src="./printer.png">
     <div class="condition">
-      <div class="circle"></div>
-      <div class="num">{{waitNum}}</div>
+      <div class="circle" :class="{ color: waitNum===0 }"></div>
+      <div class="num" :class="{ textcolor: waitNum===0 }">{{waitNum}}</div>
     </div>
   </div>
 </template>
@@ -43,8 +43,12 @@ export default {
       height 10px
       background: #D76E6E
       border-radius 50%
+    .color
+      background: #B0E671
     .num
       display inline-block
       color #D76E6E
       font-size $font-size-small
+    .textcolor
+      color #fff
 </style>
