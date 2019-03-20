@@ -37,7 +37,8 @@ export default {
   methods: {
     toPage (index) {
       switch (index) {
-        case 0: this.$router.push('/printer')
+        case 0: this.$router.push('/printer'); break
+        case 1: this.$router.push('/washer'); break
       }
     }
   }

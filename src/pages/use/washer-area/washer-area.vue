@@ -6,9 +6,9 @@
         <washer-condition></washer-condition>
       </div>
     </div>
-    <div class="see-detail">
+    <router-link to="/washer" tag="div"  class="see-detail">
       <see-detail></see-detail>
-    </div>
+    </router-link>
   </div>
 </template>
 

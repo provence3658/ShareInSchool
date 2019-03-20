@@ -1,0 +1,108 @@
+{
+  "ret": true,
+  "data": {
+    "location": "雅苑3号楼",
+    "printerList": [
+      {
+        "id": "0001",
+        "condition": "wait",
+        "waitNum": 2,
+        "location": "雅苑3-211"
+      },
+      {
+        "id": "0002",
+        "condition": "wait",
+        "waitNum": 1,
+        "location": "雅苑3-211"
+      },
+      {
+        "id": "0003",
+        "condition": "ok",
+        "waitNum": 0,
+        "location": "雅苑3-211"
+      },
+      {
+        "id": "0004",
+        "condition": "ok",
+        "waitNum": 0,
+        "location": "雅苑3-211"
+      },
+      {
+        "id": "0005",
+        "condition": "wait",
+        "waitNum": 2,
+        "location": "雅苑3-211"
+      },
+      {
+        "id": "0006",
+        "condition": "wait",
+        "waitNum": 1,
+        "location": "雅苑3-211"
+      },
+      {
+        "id": "0007",
+        "condition": "ok",
+        "waitNum": 0,
+        "location": "雅苑3-211"
+      },
+      {
+        "id": "0008",
+        "condition": "ok",
+        "waitNum": 0,
+        "location": "雅苑3-211"
+      }
+    ],
+    "washerList": [
+      {
+        "id": "0001",
+        "condition": "空闲",
+        "secondsToEnd": 0
+      },
+      {
+        "id": "0002",
+        "condition": "维修中",
+        "secondsToEnd": 0
+      },
+      {
+        "id": "0003",
+        "condition": "运行中",
+        "secondsToEnd": 1748
+      },
+      {
+        "id": "0004",
+        "condition": "运行中",
+        "secondsToEnd": 1358
+      },
+      {
+        "id": "0005",
+        "condition": "空闲",
+        "secondsToEnd": 0
+      },
+      {
+        "id": "0006",
+        "condition": "空闲",
+        "secondsToEnd": 0
+      },
+      {
+        "id": "0007",
+        "condition": "维修中",
+        "secondsToEnd": 0
+      },
+      {
+        "id": "0008",
+        "condition": "运行中",
+        "secondsToEnd": 245
+      },
+      {
+        "id": "0009",
+        "condition": "运行中",
+        "secondsToEnd": 545
+      },
+      {
+        "id": "0010",
+        "condition": "运行中",
+        "secondsToEnd": 1644
+      }
+    ]
+  }
+}

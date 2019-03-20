@@ -1,10 +1,10 @@
 <template>
-  <div class="printer">
+  <div class="washer">
     <simple-header :title="title"></simple-header>
     <div class="content-wrapper" ref="wrapper">
       <div>
         <my-filter @toggleState="_toggleState"></my-filter>
-        <list :list="printerList" :state="state"></list>
+        <washer-list :list="washerList" :state="state" class="list"></washer-list>
       </div>
     </div>
   </div>
@@ -13,22 +13,22 @@
 <script>
 import SimpleHeader from '../commonComponents/SimpleHeader/SimpleHeader2'
 import MyFilter from '../commonComponents/filter/filter'
-import List from './list/list'
+import WasherList from './list/list'
 import axios from 'axios'
 import BScroll from 'better-scroll'
 export default {
-  name: 'Printer',
-  data () {
-    return {
-      title: '打印机',
-      printerList: [],
-      state: 'all'
-    }
-  },
+  name: 'Washer',
   components: {
     SimpleHeader,
     MyFilter,
-    List
+    WasherList
+  },
+  data () {
+    return {
+      title: '洗衣机',
+      washerList: [],
+      state: 'all'
+    }
   },
   methods: {
     getUseInfo () {
@@ -38,7 +38,7 @@ export default {
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
-        this.printerList = data.printerList
+        this.washerList = data.washerList
       }
     },
     _toggleState (data) {
@@ -52,7 +52,7 @@ export default {
         this.scroll = new BScroll(this.$refs.wrapper, {
           click: true
         })
-        // console.log(this.scroll)
+        console.log(this.scroll)
       } else {
         this.scroll.refresh()
       }
@@ -62,7 +62,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.printer
+.washer
   .content-wrapper
     position absolute
     top 50px
@@ -70,4 +70,6 @@ export default {
     right 0
     bottom 0
     overflow hidden
+    .list
+      padding 0 20px
 </style>

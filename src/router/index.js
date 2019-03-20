@@ -21,6 +21,7 @@ import wordPrint from '@/pages/wordPrint/wordPrint'
 import LocalFile from '@/pages/localFile/localFile'
 import printWait from '@/pages/printWait/printWait'
 import onePrinter from '@/pages/onePrinter/onePrinter'
+import washer from '@/pages/washer/washer'
 Vue.use(Router)
 
 export default new Router({
@@ -126,6 +127,10 @@ export default new Router({
     {
       path: '/onePrinter/:id',
       component: onePrinter
+    },
+    {
+      path: '/washer',
+      component: washer
     }
   ]
 })
