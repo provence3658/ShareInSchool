@@ -26,6 +26,7 @@ import washKind from '@/pages/washKind/washKind'
 import book from '@/pages/book/book'
 import noticeDetail from '@/pages/mine/notify/noticeDetail/noticeDetail'
 import mybook from '@/pages/mine/mybook/mybook'
+import eatDetail from '@/pages/eatDetail/eatDetail'
 Vue.use(Router)
 
 export default new Router({
@@ -152,6 +153,11 @@ export default new Router({
     {
       path: '/mine/detail',
       component: noticeDetail
+    },
+    {
+      path: '/eatDetail/:id',
+      name: 'eatDetail',
+      component: eatDetail
     }
   ]
 })
