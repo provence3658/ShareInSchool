@@ -19,13 +19,10 @@
         @scroll="onScroll"
         :options="slideOptions">
         <cube-slide-item>
-          <private-message></private-message>
+          <onsale></onsale>
         </cube-slide-item>
         <cube-slide-item>
-          <ratings></ratings>
-        </cube-slide-item>
-        <cube-slide-item>
-          <notice></notice>
+          <saled></saled>
         </cube-slide-item>
       </cube-slide>
     </div>
@@ -33,20 +30,17 @@
 </template>
 
 <script>
-import notice from '../notice/notice'
-import privateMessage from '../privateMessage/privateMessage'
-import ratings from '../ratings/ratings'
+import saled from '../saled/saled'
+import onsale from '../onsale/onsale'
 export default {
   name: 'tab',
   data () {
     return {
       index: 0,
       tabs: [{
-        label: '私信'
+        label: '出售中'
       }, {
-        label: '评论'
-      }, {
-        label: '通知'
+        label: '已出售'
       }],
       slideOptions: {
         listenScroll: true,
@@ -79,9 +73,8 @@ export default {
     }
   },
   components: {
-    ratings,
-    privateMessage,
-    notice
+    onsale,
+    saled
   }
 }
 </script>
@@ -96,8 +89,10 @@ export default {
     flex-direction column
     height 100%
     .cube-tab-bar
-      background $color-theme
+      // background $color-theme
     .slide-wrapper
       flex 1
       overflow hidden
+    .slide-wrapper
+      background #f8f8f8
 </style>

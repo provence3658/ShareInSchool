@@ -23,6 +23,9 @@ import printWait from '@/pages/printWait/printWait'
 import onePrinter from '@/pages/onePrinter/onePrinter'
 import washer from '@/pages/washer/washer'
 import washKind from '@/pages/washKind/washKind'
+import book from '@/pages/book/book'
+import noticeDetail from '@/pages/mine/notify/noticeDetail/noticeDetail'
+import mybook from '@/pages/mine/mybook/mybook'
 Vue.use(Router)
 
 export default new Router({
@@ -76,6 +79,11 @@ export default new Router({
       path: '/mine/idrz',
       name: 'idrz',
       component: idRZ
+    },
+    {
+      path: '/mine/mybook',
+      name: 'mybook',
+      component: mybook
     },
     {
       path: '/mine/appointment',
@@ -136,6 +144,14 @@ export default new Router({
     {
       path: '/washKind',
       component: washKind
+    },
+    {
+      path: '/book',
+      component: book
+    },
+    {
+      path: '/mine/detail',
+      component: noticeDetail
     }
   ]
 })

@@ -23,7 +23,7 @@ import SimpleHeader from '../commonComponents/SimpleHeader/SimpleHeader2'
 import MyFilter from '../commonComponents/filter/filter'
 import WasherList from './list/list'
 import axios from 'axios'
-import BScroll from 'better-scroll'
+// import BScroll from 'better-scroll'
 export default {
   name: 'Washer',
   components: {

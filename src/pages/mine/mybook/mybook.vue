@@ -11,14 +11,14 @@
 import SimpleHeader from '../../commonComponents/SimpleHeader/SimpleHeader1'
 import tab from './tab/tab'
 export default {
-  name: 'order',
+  name: 'mybook',
   components: {
     SimpleHeader,
     tab
   },
   data () {
     return {
-      title: '我的订单'
+      title: '我的书籍'
     }
   }
 }

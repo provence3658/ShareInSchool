@@ -103,6 +103,73 @@
         "condition": "运行中",
         "secondsToEnd": 1644
       }
+    ],
+    "bookList":[
+      {
+        "id": "0001",
+        "title": "高等数学上册",
+        "grade": "大一",
+        "company": "同济大学出版社",
+        "version": "第七版",
+        "place": "雅苑3号楼1楼",
+        "price": "6元",
+        "storage": "12本",
+        "seller": "丽丽",
+        "buyed":"102人购买过",
+        "pic": ""
+      },
+      {
+        "id": "0001",
+        "title": "高等数学上册",
+        "grade": "大一",
+        "company": "同济大学出版社",
+        "version": "第七版",
+        "place": "雅苑3号楼1楼",
+        "price": "6元",
+        "storage": "12本",
+        "seller": "丽丽",
+        "buyed":"102人购买过",
+        "pic": ""
+      },
+      {
+        "id": "0001",
+        "title": "高等数学上册",
+        "grade": "大一",
+        "company": "同济大学出版社",
+        "version": "第七版",
+        "place": "雅苑3号楼1楼",
+        "price": "6元",
+        "storage": "12本",
+        "seller": "丽丽",
+        "buyed":"102人购买过",
+        "pic": ""
+      },
+      {
+        "id": "0001",
+        "title": "高等数学上册",
+        "grade": "大一",
+        "company": "同济大学出版社",
+        "version": "第七版",
+        "place": "雅苑3号楼1楼",
+        "price": "6元",
+        "storage": "12本",
+        "seller": "丽丽",
+        "buyed":"102人购买过",
+        "pic": ""
+      },
+      {
+        "id": "0001",
+        "title": "高等数学上册",
+        "grade": "大一",
+        "company": "同济大学出版社",
+        "version": "第七版",
+        "place": "雅苑3号楼1楼",
+        "price": "6元",
+        "storage": "12本",
+        "seller": "丽丽",
+        "buyed":"102人购买过",
+        "pic": ""
+      }
     ]
   }
 }

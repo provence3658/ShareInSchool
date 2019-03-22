@@ -19,13 +19,16 @@
         @scroll="onScroll"
         :options="slideOptions">
         <cube-slide-item>
-          <private-message></private-message>
+          <wash></wash>
         </cube-slide-item>
         <cube-slide-item>
-          <ratings></ratings>
+          <study></study>
         </cube-slide-item>
         <cube-slide-item>
-          <notice></notice>
+          <eat></eat>
+        </cube-slide-item>
+        <cube-slide-item>
+          <watch></watch>
         </cube-slide-item>
       </cube-slide>
     </div>
@@ -33,20 +36,23 @@
 </template>
 
 <script>
-import notice from '../notice/notice'
-import privateMessage from '../privateMessage/privateMessage'
-import ratings from '../ratings/ratings'
+import eat from '../eat/eat'
+import watch from '../watch/watch'
+import wash from '../wash/wash'
+import study from '../study/study'
 export default {
   name: 'tab',
   data () {
     return {
       index: 0,
       tabs: [{
-        label: '私信'
+        label: '洗衣'
       }, {
-        label: '评论'
+        label: '学习'
       }, {
-        label: '通知'
+        label: '烹饪'
+      }, {
+        label: '观影'
       }],
       slideOptions: {
         listenScroll: true,
@@ -79,9 +85,10 @@ export default {
     }
   },
   components: {
-    ratings,
-    privateMessage,
-    notice
+    wash,
+    watch,
+    eat,
+    study
   }
 }
 </script>
@@ -100,4 +107,5 @@ export default {
     .slide-wrapper
       flex 1
       overflow hidden
+      background #f8f8f8
 </style>

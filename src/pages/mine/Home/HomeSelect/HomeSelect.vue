@@ -9,6 +9,10 @@
         <td class="first"><img src="./appointment.png" alt=""></td>
         <td>我的预约</td>
       </tr>
+      <tr @click="pageRouter(mybook)">
+        <td class="first"><img src="./feedback.png" alt=""></td>
+        <td>我的书籍</td>
+      </tr>
       <tr @click="pageRouter(feedback)">
         <td class="first"><img src="./feedback.png" alt=""></td>
         <td>反馈中心</td>
@@ -41,6 +45,10 @@ export default {
       setup: {
         path: 'setup',
         name: '设置'
+      },
+      mybook: {
+        path: 'mybook',
+        name: '我的书籍'
       }
     }
   },
@@ -65,7 +73,7 @@ export default {
       .first
         padding-left 15px
         width 20%
-        height 60px
+        height 50px
         // padding 10px
         //border 1px solid black
         img
