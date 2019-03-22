@@ -22,12 +22,13 @@ import LocalFile from '@/pages/localFile/localFile'
 import printWait from '@/pages/printWait/printWait'
 import onePrinter from '@/pages/onePrinter/onePrinter'
 import washer from '@/pages/washer/washer'
+import washKind from '@/pages/washKind/washKind'
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/login',
       name: 'login',
       component: Login
     },
@@ -37,7 +38,7 @@ export default new Router({
       component: Register
     },
     {
-      path: '/use',
+      path: '/',
       name: 'Use',
       component: Use
     },
@@ -131,6 +132,10 @@ export default new Router({
     {
       path: '/washer',
       component: washer
+    },
+    {
+      path: '/washKind',
+      component: washKind
     }
   ]
 })

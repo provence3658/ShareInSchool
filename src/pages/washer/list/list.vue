@@ -7,7 +7,8 @@
       :key="index"
       :washerId="item.id"
       :condition="item.condition"
-      :secondsToEnd="item.secondsToEnd"></list-item>
+      :secondsToEnd="item.secondsToEnd"
+      @res="getResponse"></list-item>
   </div>
 </template>
 
@@ -21,12 +22,18 @@ export default {
   props: {
     List: Array,
     state: String
+  },
+  methods: {
+    getResponse (data) {
+      this.$emit('response', data)
+    }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
 .list
+  padding 0 20px
   .list-item
     margin 10px
     float left

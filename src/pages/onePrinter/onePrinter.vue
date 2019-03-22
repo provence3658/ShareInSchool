@@ -2,15 +2,15 @@
   <div class="onePrinter">
     <simple-header :title="title"></simple-header>
     <div class="container">
+      <div class="img-wrapper">
+        <img src="./printer.png" alt="">
+      </div>
       <div class="state line">状态：{{printer.condition === 'wait' ? '等待' : '空闲'}}</div>
       <div class="waitNum line">当前等待人数：{{printer.waitNum}}</div>
       <div class="waitTime line">预计等待时间：{{printer.waitNum * 2}}分钟</div>
       <div class="location line">位置：{{printer.location}}</div>
-      <div class="img-wrapper">
-        <img src="./printer.png" alt="">
-      </div>
+      <div class="button" @click="pressBtn">我要{{printer.condition === 'wait' ? '排队' : '打印'}}</div>
     </div>
-    <div class="button" @click="pressBtn">我要{{printer.condition === 'wait' ? '排队' : '打印'}}</div>
   </div>
 </template>
 
@@ -61,15 +61,26 @@ export default {
 <style lang="stylus" scoped>
 @import '~common/stylus/variable.styl'
 .onePrinter
+  position absolute
+  top 0
+  right 0
+  left 0
+  bottom 0
+  overflow hidden
+  background-color: #F7F7F7
   .container
-    margin 0 auto
-    margin-top 50px
-    width: 319px;
-    height: 378px;
+    position absolute
+    top 72px
+    right 20px
+    left 20px
+    bottom 121px
     line-height: 20px;
-    border-radius: 0px 0px 20px 20px;
-    background-color: rgba(254, 241, 136, 0.41);
+    color: rgba(16, 16, 16, 1);
+    font-size: 14px;
     text-align: center;
+    font-family: Roboto;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color #fff
     .line
       text-align left
       height 48px
@@ -79,14 +90,17 @@ export default {
       img
         width 140px
         height 140px
-  .button
-    width 120px
-    height 40px
-    line-height 40px
-    border-radius 10px
-    font-size $font-size-medium
-    text-align center
-    border 1px solid rgba(0, 0, 0, 1)
-    margin 0 auto
-    margin-top 24px
+    .button
+      width: 95px;
+      height: 39px;
+      line-height: 39px;
+      border-radius: 10px;
+      background-color: rgba(250, 232, 85, 1);
+      color: rgba(16, 16, 16, 1);
+      font-size: 14px;
+      text-align: center;
+      box-shadow: 1px 1px 2px 0px rgba(170, 170, 170, 1);
+      font-family: Roboto;
+      border: 1px solid rgba(0, 0, 0, 1);
+      margin 20px auto
 </style>

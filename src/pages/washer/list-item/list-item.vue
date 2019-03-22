@@ -1,5 +1,5 @@
 <template>
-  <div class="list-item">
+  <div class="list-item" @click="res()">
     <div class="id">编号：{{washerId}}</div>
     <img :src="switchPic()" alt="">
     <div class="condition">{{condition}}</div>
@@ -23,6 +23,9 @@ export default {
       } else {
         return require('./fix.png')
       }
+    },
+    res () {
+      this.$emit('res', this.condition)
     }
   }
 }
