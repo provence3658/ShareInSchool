@@ -23,6 +23,7 @@ import printWait from '@/pages/printWait/printWait'
 import onePrinter from '@/pages/onePrinter/onePrinter'
 import washer from '@/pages/washer/washer'
 import washKind from '@/pages/washKind/washKind'
+import eatDetail from '@/pages/eatDetail/eatDetail'
 Vue.use(Router)
 
 export default new Router({
@@ -136,6 +137,11 @@ export default new Router({
     {
       path: '/washKind',
       component: washKind
+    },
+    {
+      path: '/eatDetail/:id',
+      name: 'eatDetail',
+      component: eatDetail
     }
   ]
 })

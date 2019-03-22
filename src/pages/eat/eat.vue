@@ -20,6 +20,7 @@ export default {
     return {
       kitchens: [
         {
+          id: 1,
           title: '炒菜房',
           location: '雅苑3-302',
           rate: 5,
@@ -27,6 +28,7 @@ export default {
           labels: ['78次/周', '1~3人'],
           price: '8/小时'
         }, {
+          id: 2,
           title: '火锅房',
           location: '雅苑3-501',
           rate: 4.5,
@@ -34,6 +36,7 @@ export default {
           labels: ['82次/周', '3~5人'],
           price: '8/小时'
         }, {
+          id: 3,
           title: '烘焙房',
           location: '雅苑3-406',
           rate: 4,

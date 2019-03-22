@@ -1,5 +1,5 @@
 <template>
-  <div class="list-item">
+  <div class="list-item" @click="goToDetail()">
     <div class="top">
       <div class="title">{{data.title}}</div>
       <div class="location">
@@ -46,6 +46,16 @@ export default {
   data () {
     return {
       max: 5
+    }
+  },
+  methods: {
+    goToDetail () {
+      var title = this.data.title
+      var i = title.length - 1
+      var id = this.data.id
+      if (title.charAt(i) === '房') {
+        this.$router.push({name: 'eatDetail', params: {id: id}})
+      }
     }
   }
 }

@@ -2,12 +2,12 @@
   <div class="tab">
     <router-link
       tag="div"
-      to="/use"
+      to="/"
       class="tab-item"
-      @click.native="switchTo('/use')"
+      @click.native="switchTo('/')"
     >
       <div class="img-wrapper">
-        <img class="img-content" :src="'/use' === $route.path ? tabImg[0].selected : tabImg[0].normal">
+        <img class="img-content" :src="'/' === $route.path ? tabImg[0].selected : tabImg[0].normal">
       </div>
       <p class="tab-link">
         享用
